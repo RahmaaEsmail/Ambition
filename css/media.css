@@ -1,0 +1,20 @@
+@media (max-width: 991px) {
+    header .header-txt h2{
+        font-size: 38px !important;
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
+        color: white;
+        text-shadow: -10px 5px 3px var(--main-color);
+        margin-left: 40px !important;
+    }
+    header .header-txt h1{
+        font-size: 38px !important;
+        font-weight: bold !important;
+        font-family: 'Readex Pro', sans-serif;
+        color: #F98619;
+        margin-left: 18px !important;
+    }
+    header .header-txt h1,header .header-txt h2{
+        transform: translateY(450%) !important;
+    }
+}

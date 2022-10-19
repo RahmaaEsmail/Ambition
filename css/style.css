@@ -1,0 +1,287 @@
+/* start general style */
+body {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --main-color: #0c3446;
+    --headerTxt-color: #F98619;
+}
+
+*::selection {
+    background-color: rgb(114, 143, 156);
+    color: white;
+}
+
+h1::selection, .whoAreWe .headerTxt::selection {
+    background-color: #F98619 !important;
+    color: white !important;
+}
+
+/* end general style */
+
+
+
+.first_word h5 {
+    color: rgb(114, 143, 156);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+
+
+/* start header */
+header {
+    background-image: url(../images/modern-nyc-interior-architecture.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+header .layer-header {
+    position: relative;
+    inset: 0;
+    background-color: rgba(4, 54, 78, 0.2)
+}
+
+header nav {
+    direction: rtl;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+header .navbar {
+    padding: 0 !important;
+}
+
+header .navbar-nav .nav-item .nav-link {
+    color: white;
+}
+
+header .navbar-nav .nav-item {
+    margin-right: 20px !important;
+}
+
+header .navbar-toggler .navbar-toggler-icon {
+    background-image: none;
+}
+
+header .navbar-toggler:focus {
+    box-shadow: 0 0 0 0;
+}
+
+header .header-txt h2 {
+    font-size: 60px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-shadow: -6px 3px 0px rgb(114, 143, 156);
+}
+
+header .header-txt h1 {
+    font-size: 70px;
+    font-weight: bold !important;
+    font-family: 'Readex Pro', sans-serif;
+    color: var(--headerTxt-color);
+}
+
+header .header-txt h1, header .header-txt h2 {
+    transform: translateY(200%) !important;
+}
+
+#sidebar {
+    position: absolute;
+    right: -100%;
+    top: 0;
+    bottom: 0;
+    width: 20rem;
+    background-color: #0c3446;
+}
+
+.sidebar .nav-link {
+    color: white;
+}
+
+.sidebar .nav-link:hover {
+    background-color: white !important;
+    color: #0c3446 !important;
+    border: 1px solid white;
+    border-radius: 30px;
+    width: 150px !important;
+    text-align: center;
+}
+
+header .active {
+    background-color: rgba(204, 204, 204, 0.5) !important;
+}
+
+/* end header */
+
+
+/* start textAboutAmbition */
+.textAboutAmbition {
+    direction: rtl;
+}
+
+.textAboutAmbition h5 {
+    transform: translateX(-20%);
+    line-height: 1.6;
+}
+
+/* end textAboutAmbition */
+
+
+/* start who are we */
+.whoAreWe .headerTxt {
+    color: var(--headerTxt-color);
+    font-weight: bold;
+    font-size: 50px !important;
+    margin-bottom: 15px;
+}
+
+.whoAreWe .line {
+    width: 10%;
+    height: 2px;
+    background-color: var(--headerTxt-color);
+    margin: auto;
+    transition: all 0.5s;
+}
+
+.whoAreWe .header:hover .line {
+    width: 25%;
+}
+
+.whoAreWe .infoParent {
+    direction: rtl;
+}
+
+.whoAreWe .infoParent .infoChild {
+    background-color: var(--main-color);
+    direction: rtl;
+    height: 400px !important;
+}
+
+/* end who are we */
+
+
+/* start ourServices */
+.ourServices {
+    background-image: url(../images/rpa-concept-with-blurry-hand-touching-screen.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    direction: rtl;
+}
+
+.ourServices .layer-service {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.ourServices .service {
+    direction: rtl;
+    background-color: rgba(12, 52, 70, 0.8);
+    border-top-right-radius: 150px;
+    border-bottom-left-radius: 150px;
+    height: 300px;
+}
+
+/* end ourServices */
+
+
+/* start contactUs */
+.contactUs {
+    background-color: #244859;
+}
+
+.contactUs h2 {
+    color: #ccc;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.contactUs form {
+    direction: rtl;
+}
+
+.contactUs form input, .contactUs form textarea, .contactUs form select {
+    background-color: transparent !important;
+    border: none !important;
+    border-bottom: 1px solid #ccc !important;
+}
+
+.form-control:focus, button:focus {
+    box-shadow: 0 0 0 0;
+}
+
+.contactUs form input::placeholder, .contactUs form textarea::placeholder {
+    color: #ccc !important;
+}
+
+.contactUs form textarea {
+    background-color: transparent !important;
+    border: none !important;
+    border-bottom: 1px solid #ccc !important;
+}
+
+.contactUs form button {
+    background-color: #8E3200;
+}
+
+.contactUs form select .optionPlaceHolde {
+    color: red !important;
+}
+
+.contactUs .form-control {
+    color: #ccc !important;
+}
+
+/* end contactUs */
+
+
+/* start lastSection */
+.lastSection {
+    background-image: url(../images/businessman-using-digital-tablet.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.lastSection .layerLastSection {
+    background-color: rgba(4, 54, 78, 0.4);
+
+}
+
+.lastSection .txtContainer {
+    border: 5px solid #ccc;
+    position: relative;
+    inset: 0;
+}
+
+.lastSection .txtChild {
+    background-color: rgba(204, 204, 204, 0.6);
+
+}
+
+/* end lastSection */
+
+
+/* start footer */
+footer {
+    background-color: #0b2d39
+}
+
+/* end footer  */
+
+
+/* start CopyRight */
+.CopyRight {
+    background-color: black;
+}
+
+.CopyRight .icons svg {
+    border-radius: 50% !important;
+    border: 1px solid white;
+}
+
+/* end CopyRight */
